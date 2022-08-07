@@ -22,6 +22,11 @@
    - O(N)
    - 해당 과정에서는 start부터 시작해서 end까지 총 N번의 변수 탐색이 이루어진다.
 
-## Test
-- Jest 이용
+## Test (jest)
+- 실행 방법
+  ```
+  npm i
+  npm test
+  ```
+- 결과
   <img src=https://user-images.githubusercontent.com/89074053/183281249-b5fbe34e-1ea7-417e-a80a-40113fd86d98.png>
