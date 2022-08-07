@@ -42,12 +42,3 @@ class queue {
 }
 
 export default queue;
-
-const test = new queue();
-test.enqueue(10);
-test.enqueue(5);
-test.enqueue(7);
-console.log(test.getAll());
-console.log(test.dequeue());
-console.log(test.dequeue());
-console.log(test.getAll());

@@ -49,15 +49,4 @@ function queue() {
   };
 }
 
-const test = queue();
-console.log(test.getAll());
-test.enqueue(10);
-test.enqueue(5);
-console.log(test.dequeue());
-console.log(test.getAll());
-test.enqueue(3);
-console.log(test.dequeue());
-console.log(test.dequeue());
-test.enqueue(2);
-test.enqueue(14);
-console.log(test.getAll());
+export default queue
