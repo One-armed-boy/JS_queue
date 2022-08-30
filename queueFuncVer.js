@@ -11,14 +11,14 @@ function Node(inputData) {
   };
 }
 
-function queue() {
+function Queue() {
   let start = null;
   let end = null;
   let length = 0;
 
   return {
-    enqueue: (data) => {
-      const node = Node(data);
+    enqueue: (element) => {
+      const node = Node(element);
       if (length === 0) {
         start = node;
       } else {
@@ -27,6 +27,7 @@ function queue() {
       end = node;
       length++;
     },
+
     dequeue: () => {
       if (length === 0) {
         return undefined;
@@ -36,6 +37,7 @@ function queue() {
       length--;
       return startNode.getData();
     },
+
     getAll: () => {
       let node = start;
       const result = [];
@@ -45,8 +47,9 @@ function queue() {
       }
       return result;
     },
+
     length: () => length,
   };
 }
 
-export default queue
+export default Queue;

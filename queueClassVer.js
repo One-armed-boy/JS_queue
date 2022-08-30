@@ -5,14 +5,15 @@ class Node {
   }
 }
 
-class queue {
+class Queue {
   constructor() {
     this.start = null;
     this.end = null;
     this.length = 0;
   }
-  enqueue(data) {
-    const node = new Node(data);
+
+  enqueue(element) {
+    const node = new Node(element);
     if (this.length === 0) {
       this.start = node;
     } else {
@@ -21,6 +22,7 @@ class queue {
     this.length++;
     this.end = node;
   }
+
   dequeue() {
     if (this.length === 0) {
       return undefined;
@@ -30,6 +32,7 @@ class queue {
     this.length--;
     return startNode.data;
   }
+
   getAll() {
     const result = [];
     let node = this.start;
@@ -41,4 +44,4 @@ class queue {
   }
 }
 
-export default queue;
+export default Queue;
